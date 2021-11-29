@@ -1,0 +1,72 @@
+.site-header {
+
+  &__mic-modal-content {
+    @include width-height(100%, 100%);
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: #000000ce;
+  }
+
+  &__mic-modal {
+    @include width-height(600px, 420px);
+    @include bg-and-color(var(--bg-light), var(--color-dark));
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    z-index: 20;
+    opacity: 1;
+    transform: translateX(-50%);
+    padding-left: 32px;
+  }
+
+  &__mic-close-btn {
+    @include bg-border-none;
+    @include font-body(400, 24px, var(--color-dark));
+    padding: 12px;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  &__mic-title {
+    @include font-body(400, 22px, var(--color-dark));
+    margin-bottom: 24px;
+  }
+
+  &__mic-text {
+    @include font-body(400, 14px, var(--color-dark));
+    margin-bottom: 160px;
+  }
+
+  &__mic-big-btn {
+    @include font-body(400, 28px, var(--color-dark));
+    @include width-height(68px, 68px);
+    position: absolute;
+    left: 50%;
+    bottom: 150px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 50%;
+    z-index: 1000;
+    transform: translate(-50%, 50%);
+  }
+
+  &__mic-animate {
+    animation: mic-animate 3s ease infinite;
+      
+    @keyframes mic-animate {
+      0% {
+        @include width-height(68px, 68px);
+      } 
+      50% {
+        @include width-height(150px, 150px);
+      }
+      100% {
+        @include width-height(68px, 68px);
+      }
+    }
+  }
+}

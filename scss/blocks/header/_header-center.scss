@@ -1,4 +1,5 @@
 .site-header {
+  position: relative;
 
   &__form {
     position: relative;
@@ -24,12 +25,25 @@
     right: 40px;
   }
 
-  &__form-mic {
-    @include width-height(24px, 24px);    
+  &__form-key {
     @include bg-border-none;
+    @include bg-and-color(transparent, var(--color-dark));
+    position: absolute;
+    top: 50%;
+    right: 110px;
+    transform: translateY(-50%)
+  }
+
+  &__form-mic {
+    @include width-height(36px, 36px);    
+    @include bg-border-none;
+    padding: 14px;
+    background-size: 24px, 24px;
+    background-position: center;
     background-image: var(--mic-img);
     margin-left: 12px;
-    padding: 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
   }
 }
 

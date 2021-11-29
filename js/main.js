@@ -9,6 +9,39 @@ let elProfileBack = document.querySelector('.profile__back');
 let elBody = document.querySelector('main');
 let elBurgerMenu = document.querySelector('.site-header__left-menu-btn');
 let elSiteHideList = document.querySelector('.site-main__left-list');
+let elMicBtn = document.querySelector('.site-header__mic-big-btn');
+let elMicCloseBtn = document.querySelector('.site-header__mic-close-btn');
+let elMicModal = document.querySelector('.site-header__mic-modal-content');
+let elMicInnerModal = document.querySelector('.site-header__mic-modal');
+let elMicOpenModal = document.querySelector('.site-header__form-mic');
+
+elMicOpenModal.addEventListener('click', openModal);
+
+function openModal(e) {
+  if (e.target.classList.contains('site-header__form-mic')) {
+    elMicModal.classList.add('d-block');
+    console.log(elMicModal.classList === 'site-header__mic-modal-content');
+  }
+};
+
+elMicModal.addEventListener('click', closeModal);
+
+function closeModal(e) {
+  if (e.target.classList.contains('site-header__mic-modal-content')) {
+    elMicModal.classList.add('d-none');
+  }
+  else if (e.target.classList.contains('d-none')) {
+    elMicModal.classList.add('d-block');
+  }
+};
+
+elMicBtn.addEventListener('click', () => {
+  elMicBtn.classList.toggle('site-header__mic-animate')
+});
+
+elMicCloseBtn.addEventListener('click', () => {
+  elMicModal.classList.add('d-none');
+});
 
 elProfileBack.addEventListener('click', () => {
   elProfileThemeList.classList.toggle('d-none');

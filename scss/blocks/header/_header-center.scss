@@ -20,8 +20,8 @@
     @include width-height(64px, 36px);
     @include border(1px, var(--border-color));
     @include bg-and-color(var(--search-bg-color), var(--search-color));
-    position: relative;
-    // right: 5px;
+    position: absolute;
+    right: 40px;
   }
 
   &__form-mic {
@@ -31,4 +31,11 @@
     margin-left: 12px;
     padding: 10px;
   }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
 }

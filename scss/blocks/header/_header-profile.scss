@@ -2,8 +2,8 @@
   @include border(1px, var(--border-color));
   @include width-height(300px, auto);
   position: absolute;
-  right: 40px;
-  top: 0;
+  right: 0;
+  top: 40px;
   background-color: var(--bg-light);
 }
 
@@ -64,7 +64,7 @@
     display: none;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 40px;
     background-color: var(--bg-light);
   }
 

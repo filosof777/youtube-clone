@@ -1,5 +1,21 @@
 .site-main {
 
+  &__item {
+
+    &:hover .site-main__inner-image {
+      display: none;
+    }
+
+    &:hover .site-main__inner-gif {
+      height: 166px;
+      display: block;
+    }
+  }
+
+  &__inner-gif {
+    display: none;
+  }
+
   &__inner-img {
     border-radius: 50%;
     width: 48px;
@@ -7,7 +23,12 @@
     margin: 0 20px;
   }
 
-  &__inner-desc {
+  &__inner-image {
+    height: 166px;
+  }
+
+  &__inner-sec {
+    padding-top: 10px;
   }
 
   &__inner-title {

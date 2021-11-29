@@ -11,11 +11,15 @@ let elBurgerMenu = document.querySelector('.site-header__left-menu-btn');
 let elSiteHideList = document.querySelector('.site-main__left-list');
 
 elProfileBack.addEventListener('click', () => {
-  elProfileThemeList.classList.add('d-none');
+  elProfileThemeList.classList.toggle('d-none');
+  elProfileList.classList.remove('d-none');
+  elProfileList.classList.add('d-block');
+
 });
 
 elChangeTheme.addEventListener('click', () => {
   elProfileThemeList.classList.toggle('d-block');
+  elProfileList.classList.add('d-none');
 });
 
 elProfile.addEventListener('click', () => {
@@ -60,7 +64,6 @@ elBurgerMenu.addEventListener('click', () => {
         item.classList.add('site-main__left-link');
         item.parentNode.parentNode.style.overflow = "scroll";
         item.parentNode.style.paddingRight = '30px';
-
       }
     }
   })

@@ -1,5 +1,5 @@
 // CONTAINER 
-$container-width: 1240px;
+$container-width: 1440px;
 $padding: 20px;
 $max-xs: 576px;
 $max-sm: 768px;
@@ -7,9 +7,12 @@ $max-md: 992px;
 $max-lg: 1200px;
 
 // COLORS
+$color-light: #fff;
+$bg-color-dark: #212121;
+$bg-color-main-dark: #181818;
 $color-primary: #b00000;
 $bg-color-primary: #fff;
+$logo: url("../img/logo-dark.svg");
 
 // FONTS
-$font-body:'sans', sans-serif;
-$font-inter:'inter', sans-serif;
+$font-body: "Roboto", sans-serif;

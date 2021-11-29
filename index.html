@@ -6,29 +6,350 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- links -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/flexbox-grid.css">
   <link rel="stylesheet" href="css/main.min.css">
   <!-- /links -->
 </head>
 <body>
   <!-- header -->
-  <header>
-
+  <header id="header">
+    <div class="site-header">
+      <div class="site-header__container container">
+        <div class="site-header__d-flex d-flex align-items-center justify-content-between">
+          <div class="site-header__left-menu d-flex align-items-center">
+            <button class="site-header__left-menu-btn d-none d-sm-block"><i class="fal fa-bars"></i></button>
+            <a class="site-header__logo-link" href="#" target="_blank">
+              <span class="site-header__logo logo"></span>
+            </a>
+          </div>
+          <form class="site-header__form d-flex align-items-center d-none d-sm-block">
+            <input class="site-header__form-input" id="filter" type="search" placeholder="Search">
+            <button class="site-header__form-btn" type="submit"><i class="far fa-search"></i></button>
+            <button class="site-header__form-mic"></button>
+          </form>
+          <div class="site-header__right d-flex align-items-center">
+            <ul class="site-header__rigth-list d-flex align-items-center">
+              <li class="site-header__rigth-item">
+                <button class="site-header__right-btn"></button>
+              </li>
+              <li class="site-header__rigth-item">
+                <button class="site-header__right-btn"></button>
+              </li>
+              <li class="site-header__rigth-item">
+                <button class="site-header__right-btn"></button>
+              </li>
+              <li class="site-header__rigth-item d-block d-sm-none">
+                <button class="site-header__right-btn" type="submit"><i class="far fa-search"></i></button>
+              </li>
+            </ul>
+            <button class="site-header__right-link">
+              <img class="site-header__right-img" src="https://yt3.ggpht.com/yti/APfAmoGC072qN5vsB00XKQdUrOazIoOwcr7EoIjwixe8=s88-c-k-c0x00ffffff-no-rj-mo" alt="myprofile">
+            </button>
+            <div class="site-header__profile profile">
+              <div class="profile__top d-flex">
+                <button class="site-header__right-link">
+                  <img class="site-header__right-img" src="https://yt3.ggpht.com/yti/APfAmoGC072qN5vsB00XKQdUrOazIoOwcr7EoIjwixe8=s88-c-k-c0x00ffffff-no-rj-mo" alt="myprofile">
+                </button>
+                <div class="profile__desc">
+                  <h2 class="profile__title">Olimjon Kamalov</h2>
+                  <a class="profile__email d-block" type="email" href="email:olimjonkamalov@mail.ru" target="_blank">olimjonkamalov@mail.ru</a>
+                  <a class="profile__manage d-block" href="#" target="_blank">Manage your Google Account</a>
+                </div>
+              </div>
+              <ul class="profile__list">
+                <li class="profile__item">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-user"></i>Create a channel
+                  </button>
+                </li>
+                <li class="profile__item">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-usd-circle"></i>Purshases and memberships
+                  </button>
+                </li>
+                <li class="profile__item">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-cog"></i>YouTube Studio
+                  </button>
+                </li>
+                <li class="profile__item d-flex align-items-center justify-content-between">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-user-friends"></i>
+                    Switch account
+                  </button>
+                  <i class="profile__icon-arrow fal fa-chevron-right"></i>
+                </li>
+                <li class="profile__item">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-sign-out"></i>Sign out
+                  </button>
+                </li>
+                <li class="profile__item d-flex align-items-center justify-content-between" id="change-theme">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-moon"></i>Apperance: Device theme
+                  </button>
+                  <i class="profile__icon-arrow fal fa-chevron-right"></i>
+                </li>
+                <li class="profile__item d-flex align-items-center justify-content-between">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-language"></i>Language: English
+                  </button>
+                  <i class="profile__icon-arrow fal fa-chevron-right"></i>
+                </li>
+                <li class="profile__item d-flex align-items-center justify-content-between">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-globe-asia"></i>Location: Uzbekistan
+                  </button>
+                  <i class="profile__icon-arrow fal fa-chevron-right"></i>
+                </li>
+                <li class="profile__item">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-cog"></i>Settings
+                  </button>
+                </li>
+                <li class="profile__item">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-shield-check"></i>Your data in YouTube
+                  </button>
+                </li>
+                <li class="profile__item">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-question-circle"></i>Help
+                  </button>
+                </li>
+                <li class="profile__item">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-comment-alt-exclamation"></i>Send Feedback
+                  </button>
+                </li>
+                <li class="profile__item">
+                  <button class="profile__btn">
+                    <i class="profile__icon fal fa-keyboard"></i>Keyboard shortcuts
+                  </button>
+                </li>
+                <li class="profile__item d-flex align-items-center justify-content-between">
+                  <button class="profile__btn">
+                    Restriced Mode: Off
+                  </button>
+                  <i class="profile__icon-arrow fal fa-chevron-right"></i>
+                </li>
+              </ul>
+              <div class="profile__theme">
+                <button class="profile__back"><i class="profile__icon text-center fal fa-arrow-left"></i>Appearance</button>
+                <ul class="profile__theme-list">
+                  <li class="profile__theme-item">
+                    <button class="profile__btn">
+                      <i class="profile__icon fal fa-check"></i>Dark
+                    </button>
+                  </li>
+                  <li class="profile__theme-item">
+                    <button class="profile__btn">
+                      <i class="profile__icon fal fa-check"></i>Light
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <!-- /header -->
-
+  
   <!-- main -->
-  <main>
-
-  </main>
+  <!-- <main id="main">
+    <div class="site-main">
+      <div class="site-main__container container">
+        <div class="site-main__d-flex d-flex">
+          <div class="site-main__left">
+            <ul class="site-main__left-list d-none d-md-block">
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fal fa-home-alt"></i></button>
+                <a class="site-main__left-link d-block" href="#">home</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fal fa-compass"></i></i></button>
+                <a class="site-main__left-link d-block" href="#">explore</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fal fa-photo-video"></i></button>
+                <a class="site-main__left-link d-block" href="#">subscriptions</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fal fa-video"></i></button>
+                <a class="site-main__left-link d-block" href="#">library</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fal fa-history"></i></button>
+                <a class="site-main__left-link d-block" href="#">history</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fal fa-clock"></i></button>
+                <a class="site-main__left-link d-block" href="#">watch later</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fal fa-thumbs-up"></i></button>
+                <a class="site-main__left-link d-block" href="#">liked music</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fas fa-music"></i></button>
+                <a class="site-main__left-link d-block" href="#">music</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fas fa-trophy"></i></button>
+                <a class="site-main__left-link d-block" href="#">sports</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fas fa-gamepad"></i></button>
+                <a class="site-main__left-link d-block" href="#">gaming</a>
+              </li>
+              <li class="site-main__left-item d-flex align-items-center">
+                <button class="site-main__left-btn"><i class="fas fa-newspaper"></i></button>
+                <a class="site-main__left-link d-block" href="#">news</a>
+              </li>
+            </ul>
+          </div>
+          <div class="site-main__contents">
+            <nav class="site-main__nav">
+              <ul class="site-main__nav-list d-flex justify-content-between px-2">
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">All</button>
+                </li>
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">UI/UX</button>
+                </li>
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">Logos</button>
+                </li>
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">Computer science</button>
+                </li>
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">Sales</button>
+                </li>
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">Music</button>
+                </li>
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">Live</button>
+                </li>
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">Stock Market</button>
+                </li>
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">Mixes</button>
+                </li>
+                <li class="site-main__nav-item">
+                  <button class="site-main__nav-btn">Lo-fi Music</button>
+                </li>
+              </ul>
+            </nav>
+            <ul class="site-main__row row"  id="main-list">
+              <li class="site-main__col col-lg-3 col-md-4 col-sm-6 col-12 px-0">
+                <div class="site-main__inner px-2">
+                  <iframe class="m-lg-2" width="100%" height="160px" src="https://www.youtube.com/embed/_uQrJ0TkZlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="site-main__inner-d-flex d-flex" id="site-main__inner">
+                    <img class="site-main__inner-img" src="https://yt3.ggpht.com/tBEPr-zTNXEeae7VZKSZYfiy6azzs9OHowq5ZvogJeHoVtKtEw2PXSwzMBKVR7W0MI7gyND8=s88-c-k-c0x00ffffff-no-rj" alt="yt-channel">
+                    <div class="site-main__inner-desc">
+                      <h2 class="site-main__inner-title">Python Tutorial - Python for Beginners [Full Course]</h2>
+                      <p class="site-main__inner-text">22M views 2 years ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="site-main__col col-lg-3 col-md-4 col-sm-6 col-12 px-0">
+                <div class="site-main__inner px-2">
+                  <iframe class="m-lg-2" width="100%" height="160px" src="https://www.youtube.com/embed/f-irDQwt1l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="site-main__inner-d-flex d-flex">
+                    <img class="site-main__inner-img" src="https://yt3.ggpht.com/ytc/AKedOLSlgx_XoqhCWgsNEvgt8a1RruoT3W1F2uD1SBh0=s176-c-k-c0x00ffffff-no-rj" alt="yt-channel">
+                    <div class="site-main__inner-desc">
+                      <h2 class="site-main__inner-title">Responsive website in HTML CSS</h2>
+                      <p class="site-main__inner-text">102K views</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="site-main__col col-lg-3 col-md-4 col-sm-6 col-12 px-0">
+                <div class="site-main__inner px-2">
+                  <iframe class="m-lg-2" width="100%" height="160px" src="https://www.youtube.com/embed/8QorZ9fcg3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="site-main__inner-d-flex d-flex" id="site-main__inner">
+                    <img class="site-main__inner-img" src="https://yt3.ggpht.com/ytc/AKedOLTENAX_RNlwH5L4oz7gt1B7VdX6ZQBRiYUHxCxy=s88-c-k-c0x00ffffff-no-rj" alt="yt-channel">
+                    <div class="site-main__inner-desc">
+                      <h2 class="site-main__inner-title">Beethoven - Symphony</h2>
+                      <p class="site-main__inner-text">2.4M views</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="site-main__col col-lg-3 col-md-4 col-sm-6 col-12 px-0">
+                <div class="site-main__inner px-2">
+                  <iframe class="m-lg-2" width="100%" height="160px"  src="https://www.youtube.com/embed/eHDlLr7021s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="site-main__inner-d-flex d-flex" id="site-main__inner">
+                    <img class="site-main__inner-img" src="https://yt3.ggpht.com/ytc/AKedOLTYX0fMyCZd49c3CYj8MkE7FV1o24b7lO5Aw71jNg=s88-c-k-c0x00ffffff-no-rj" alt="yt-channel">
+                    <div class="site-main__inner-desc">
+                      <h2 class="site-main__inner-title">Turkish Spider-Man</h2>
+                      <p class="site-main__inner-text">793K views</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="site-main__col col-lg-3 col-md-4 col-sm-6 col-12 px-0">
+                <div class="site-main__inner px-2">
+                  <iframe class="m-lg-2" width="100%" height="160px" src="https://www.youtube.com/embed/DuWyc76lYC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="site-main__inner-d-flex d-flex" id="site-main__inner">
+                    <img class="site-main__inner-img" src="https://yt3.ggpht.com/ytc/AKedOLSlgx_XoqhCWgsNEvgt8a1RruoT3W1F2uD1SBh0=s176-c-k-c0x00ffffff-no-rj" alt="yt-channel">
+                    <div class="site-main__inner-desc">
+                      <h2 class="site-main__inner-title">JavaScript Document object model (DOM) за час.</h2>
+                      <p class="site-main__inner-text">111K views</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="site-main__col col-lg-3 col-md-4 col-sm-6 col-12 px-0">
+                <div class="site-main__inner px-2">
+                  <iframe class="m-lg-2" width="100%" height="160px" src="https://www.youtube.com/embed/_uQrJ0TkZlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="site-main__inner-d-flex d-flex" id="site-main__inner">
+                    <img class="site-main__inner-img" src="https://yt3.ggpht.com/ytc/AKedOLSlgx_XoqhCWgsNEvgt8a1RruoT3W1F2uD1SBh0=s176-c-k-c0x00ffffff-no-rj" alt="yt-channel">
+                    <div class="site-main__inner-desc">
+                      <h2 class="site-main__inner-title">Python Tutorial - Python for Beginners [Full Course]</h2>
+                      <p class="site-main__inner-text">22M views 2 years ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="site-main__col col-lg-3 col-md-4 col-sm-6 col-12 px-0">
+                <div class="site-main__inner px-2">
+                  <iframe class="m-lg-2" width="100%" height="160px" src="https://www.youtube.com/embed/_uQrJ0TkZlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="site-main__inner-d-flex d-flex" id="site-main__inner">
+                    <img class="site-main__inner-img" src="https://yt3.ggpht.com/tBEPr-zTNXEeae7VZKSZYfiy6azzs9OHowq5ZvogJeHoVtKtEw2PXSwzMBKVR7W0MI7gyND8=s88-c-k-c0x00ffffff-no-rj" alt="yt-channel">
+                    <div class="site-main__inner-desc">
+                      <h2 class="site-main__inner-title">Python Tutorial - Python for Beginners [Full Course]</h2>
+                      <p class="site-main__inner-text">22M views 2 years ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="site-main__col col-lg-3 col-md-4 col-sm-6 col-12 px-0">
+                <div class="site-main__inner px-2">
+                  <iframe class="m-lg-2" width="100%" height="160px" src="https://www.youtube.com/embed/_uQrJ0TkZlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="site-main__inner-d-flex d-flex" id="site-main__inner">
+                    <img class="site-main__inner-img" src="https://yt3.ggpht.com/tBEPr-zTNXEeae7VZKSZYfiy6azzs9OHowq5ZvogJeHoVtKtEw2PXSwzMBKVR7W0MI7gyND8=s88-c-k-c0x00ffffff-no-rj" alt="yt-channel">
+                    <div class="site-main__inner-desc">
+                      <h2 class="site-main__inner-title">Python Tutorial - Python for Beginners [Full Course]</h2>
+                      <p class="site-main__inner-text">22M views 2 years ago</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main> -->
   <!-- /main -->
-
-  <!-- footer -->
-  <footer>
-    
-  </footer>
-  <!-- /footer -->
 
   <!-- scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

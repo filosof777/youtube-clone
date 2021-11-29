@@ -1,0 +1,40 @@
+:root {
+  // colors
+  --bg-light: #fff;
+  --color-dark: #212121;
+  --border-color: #ccc;
+  --input-color: #fff;
+  --search-bg-color: #c4c4c4;
+  --search-color: #808080;
+  --item-bg-color: #f4f4f4;
+  --nav-bg-btn: #c4c4c466;
+  --nav-bg-border: #0000001a;
+  
+  // images
+  --logo-img: url("../img/logo.svg");
+  --mic-img: url("../img/mic-light.svg");
+  --video-icon: url("../img/video-light-icon.svg");
+  --more-icon: url("../img/more-light-icon.svg");
+  --notific-icon: url("../img/notific-light-icon.svg");
+}
+
+.dark {
+  // colors
+  --bg-light: #212121;
+  --color-dark: #fff;
+  --border-color: #303030;
+  --input-color: #121212;
+  --search-bg-color: #202020;
+  --search-color: #808080;
+  --item-bg-color: #5f5f5f;
+  --nav-bg-btn: #373737;
+  --nav-bg-border: #0000001a;
+
+  // images
+  --logo-img: url("../img/logo-dark.svg");
+  --mic-img: url("../img/mic-dark.svg");
+  --video-icon: url("../img/video-dark-icon.svg");
+  --more-icon: url("../img/more-dark-icon.svg");
+  --notific-icon: url("../img/notific-dark-icon.svg");
+
+}

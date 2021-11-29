@@ -1,0 +1,43 @@
+.site-main {
+
+  &__left-list {
+    max-width: 200px;
+    height: 50vh;
+    overflow-y: scroll;
+  }
+
+  &__left-item {
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 30px;
+
+    &:hover {
+      background-color: var(--item-bg-color);
+    }
+  }
+
+  &__left-btn {
+    @include bg-border-none;
+    @include width-height(24px, 24px);
+    @include bg-and-color(transparent, var(--color-dark));
+    margin: 8px;
+  }
+
+  &__left-link {
+    @include font-body(400, 16px, var(--color-dark));
+    text-transform: capitalize;
+
+    &:hover {
+      color: var(--color-dark);
+    }
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.youvideo {
+  width: 500px;
+  height: 500px;
+}

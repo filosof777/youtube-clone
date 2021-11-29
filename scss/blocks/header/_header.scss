@@ -1,0 +1,30 @@
+.site-header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+@include breakpoint-down($max-md) {
+  .site-header {
+    
+    &__form-input {
+    width: 100%;
+    margin-left: 10px;
+    }
+
+    &__form-mic {
+      margin-right: 10px;
+    }
+
+    &__rigth-list {
+      margin-right: 20px;
+    }
+
+    &__rigth-item {
+  
+      &:not(:last-child) {
+        margin-right: 10px ;
+      }
+    }
+  }
+}

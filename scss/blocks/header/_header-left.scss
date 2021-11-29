@@ -1,0 +1,16 @@
+.site-header {
+
+  &__left-menu-btn {
+    @include bg-and-color(transparent, var(--color-dark));
+    @include bg-border-none;
+    padding: 20px;
+  }
+
+  &__logo {
+    @include width-height(90px, 22px);
+    @include bg-border-none;
+    display: block;
+    background-image: var(--logo-img);
+    background-repeat: no-repeat;
+  }
+}

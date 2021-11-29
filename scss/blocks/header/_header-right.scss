@@ -1,0 +1,49 @@
+.site-header {
+
+  &__right {
+    position: relative;
+  }
+
+  &__right-link {
+    @include bg-border-none;
+    position: relative;
+  }
+
+  &__rigth-list {
+    margin-right: 40px;
+  }
+
+  &__rigth-item {
+    @include width-height(24px, 24px);
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &:nth-child(1) .site-header__right-btn {
+      background-image: var(--video-icon);
+    } 
+
+    &:nth-child(2) .site-header__right-btn {
+      background-image: var(--more-icon);
+    } 
+
+    &:nth-child(3) .site-header__right-btn {
+      background-image: var(--notific-icon);
+    } 
+  }
+
+  &__right-btn {
+    @include bg-border-none;
+    @include width-height(24px, 24px);
+  }
+
+  &__right-link {
+    @include width-height(32px, 32px)
+  }
+
+  &__right-img {
+    @include width-height(32px, 32px);
+    border-radius: 50%;
+  }
+}

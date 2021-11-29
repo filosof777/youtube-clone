@@ -1,0 +1,21 @@
+.site-main {
+
+  &__inner-img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 0 20px;
+  }
+
+  &__inner-desc {
+  }
+
+  &__inner-title {
+    @include font-body(500, 14px, var(--color-dark));
+  }
+
+  &__inner-text {
+    @include font-body(400, 12px, var(--search-color));
+  
+  }
+}

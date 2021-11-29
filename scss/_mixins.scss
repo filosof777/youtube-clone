@@ -30,24 +30,30 @@
   height: $heights;
 }
 
-@mixin font-body ($ft-family: $font-body,
-                  $ft-weight: 400,
+@mixin font-body ($ft-weight: 400,
                   $ft-size: 16px,
                   $ft-color: #000) {
-  
-  font-family: $ft-family;
+
   font-weight: $ft-weight;
   font-size: $ft-size;
   color: $ft-color;
 }
 
-@mixin font-inter ($ft-family: $font-inter,
-              $ft-weight: 400,
-              $ft-size: 16px,
-              $ft-color: #000) {
-  
-  font-family: $ft-family;
-  font-weight: $ft-weight;
-  font-size: $ft-size;
-  color: $ft-color;
+@mixin border ($px, $border-color) {
+  border: $px solid $border-color;
+}
+
+@mixin bg-and-color ($bg-color: var(--input-color), $color: var(--color-dark)) {
+  background-color: $bg-color;
+  color: $color;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin bg-border-none {
+  background-color: transparent;
+  border: none;
 }

@@ -1,0 +1,16 @@
+.dark-mode {
+  color: $color-light;
+  background-color: $bg-color-dark;
+}
+
+.light-mode {
+  color: $bg-color-dark !important; 
+  background-color: $color-light !important;
+}
+
+.Box {
+  width: 400px;
+  height: 300px;
+  color: $color-light;
+  background-color: $bg-color-dark;
+}

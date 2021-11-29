@@ -1,0 +1,26 @@
+.site-main {
+
+  &__contents {
+    width: 100%;
+  }
+
+  &__nav {
+  }
+
+  &__nav-list {
+  }
+
+  &__nav-item {
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  &__nav-btn {
+    @include bg-and-color(var(--nav-bg-btn), var(--color-dark));
+    @include border(1px, var(--nav-bg-border));
+    padding: 6px 20px;
+    border-radius: 30px;
+  }
+}

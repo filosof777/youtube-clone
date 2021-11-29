@@ -1,0 +1,97 @@
+.site-header__profile {
+  @include border(1px, var(--border-color));
+  @include width-height(300px, auto);
+  position: absolute;
+  right: 40px;
+  top: 0;
+  background-color: var(--bg-light);
+}
+
+.profile {
+  display: none;
+
+  &__top {
+    padding: 16px;
+  }
+
+  &__desc {
+    margin-left: 20px;
+  }
+
+  &__title {
+    @include font-body(500, 16px, var(--color-dark));
+  }
+
+  &__email {
+    @include font-body(400, 14px, var(--color-dark));
+    
+    &:hover {
+      color: var(--color-dark);
+    }
+  }
+
+  &__list {
+    padding: 16px 0;
+    border-top: 1px solid var(--border-color);
+  }
+
+  &__item {
+    padding: 0 16px;
+
+    &:hover {
+      background-color: var(--item-bg-color);
+    }
+
+    &:hover .profile__btn {
+      background-color: var(--item-bg-color);
+    }
+  }
+  
+  &__icon {
+    width: 40px;
+    text-align: left;
+  }
+  
+  &__btn {
+    @include bg-border-none;
+    @include bg-and-color(var(--bg-light));
+    padding: 10px 0;
+  }
+
+  &__theme {
+    @include border(1px, var(--border-color));
+    @include width-height(300px, auto);
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--bg-light);
+  }
+
+  &__back {
+    @include bg-border-none;
+    @include font-body(400, 1.4rem, var(--color-dark));
+    padding: 16px 0;
+  }
+
+  &__theme-list {
+    padding: 16px 0;
+    border-top: 1px solid var(--border-color);
+  }
+
+  &__theme-item {
+    padding: 0 16px;
+
+    &:hover {
+      background-color: var(--item-bg-color);
+    }
+
+    &:hover .profile__btn {
+      background-color: var(--item-bg-color);
+    }
+  }
+
+  &__icon-arrow {
+    color: var(--color-dark);
+  }
+}
